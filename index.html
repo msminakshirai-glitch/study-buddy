@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Study Buddy</title>
+  <style>
+    body { font-family: sans-serif; max-width: 700px; margin: 20px auto; padding: 0 12px; transition: background 0.3s; }
+    #face { font-size: 80px; }
+    #timer { font-size: 40px; margin: 4px 0; }
+    textarea { width: 100%; }
+  </style>
+</head>
+<body>
+  <h1>Study Buddy</h1>
+
+  <label>How do you feel?
+    <select id="mood">
+      <option value="calm">Calm</option>
+      <option value="energetic">Energetic</option>
+      <option value="stressed">Stressed</option>
+    </select>
+  </label>
+
+  <div id="face"></div>
+  <p id="faceMsg"></p>
+
+  <h2>Focus timer</h2>
+  <p id="timer">00:00</p>
+  <button id="startStop">Start focus</button>
+  <p>Badges: <span id="badges"></span></p>
+
+  <h2>Ask your buddy</h2>
+  <select id="task">
+    <option value="explain">Explain</option>
+    <option value="summarize">Summarize</option>
+  </select>
+  <br>
+  <textarea id="question" rows="6" placeholder="Ask a question or paste your notes..."></textarea>
+  <br>
+  <button id="ask">Ask</button>
+  <p id="answer"></p>
+  <p id="source"></p>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
